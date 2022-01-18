@@ -12,13 +12,13 @@ console.log(randomNum);
 let favDrink = "coffee";
 console.log(favDrink);
 
-console.log("My favourite drink is " + favDrink + " because its nice");
+console.log("My favorite drink is " + favDrink + " because its nice");
 
 // Template literals - can enhance the use of injecting a variable to a string
-console.log(`My favourite drink is ${favDrink} because its nice!`);
+console.log(`My favorite drink is ${favDrink} because its nice!`);
 
 favDrink = "tea";
-console.log(`My favourite drink is ${favDrink} because its nice!`);
+console.log(`My favorite drink is ${favDrink} because its nice!`);
 
 
 
