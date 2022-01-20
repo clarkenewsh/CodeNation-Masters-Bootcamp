@@ -3,12 +3,23 @@
 /* This is the base template file - please use the supplied slides to experiment */
 * {box-sizing: border-box;}
 
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* flex-wrap: wrap;
+    flex-flow: row wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
 .box {
     color: white;
     font-size: 100px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding: 15px;
+    width: 20vw;
 }
   
 /* Colours for each box */
