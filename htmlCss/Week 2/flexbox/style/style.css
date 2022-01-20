@@ -3,14 +3,20 @@
 /* This is the base template file - please use the supplied slides to experiment */
 * {box-sizing: border-box;}
 
+/* height is essential of the flex containers to be able to place flex items on the entire height of the page  */
 .container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     min-height: 100vh;
-    /* flex-wrap: wrap;
-    flex-flow: row wrap; */
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    /* Align content always styles upon the y axis */
     justify-content: center;
-    align-items: center;
+    border: 10px solid black;
+    /* Align content & items always styles upon the x axis - div width dependant  */
+    align-content: center;
+    /* align-items: center; */
+
 }
 
 .box {
@@ -19,7 +25,9 @@
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding: 15px;
-    width: 20vw;
+    /* width: 33.33%; */
+    /* Flex: 1 gives each flex item will fill the available space depending on any screen size - so the items will be full width no matee the screen res */
+    flex: 1;
 }
   
 /* Colours for each box */
