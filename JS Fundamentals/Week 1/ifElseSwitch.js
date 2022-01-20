@@ -154,28 +154,6 @@ splitString.forEach((letter) => {
     // console.log(highVowel);
 })
 
-// for (let ; i < string.length; i++){
-    // if(string)
-//     console.log(lastIndexOf(string[i]));
-// }
-
-// example solution
-// let selectVowel = 0
-// let vowelCount = 0
-// let highVowel = 0
-
-
-// for (selectVowel; selectVowel < 5; selectVowel++)
-// {
-//     vowelIndex = longStr.lastIndexOf(vowels[selectVowel])
-
-//     if (vowelIndex > highIndex)
-//     {
-//         highIndex = vowelIndex
-//     }
-// }
-// console.log(highIndex)
-
 
 // Challenge 7 
 let word = "example";
