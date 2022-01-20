@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   display: flex;
+    min-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; 
+    min-height: 100vh;
+}
+
+
+/* --------------------------
+        REUSABLE STYLES
+-------------------------- */
+
+.wrapper {
+    max-width: 88em;
+    margin: 0 auto;
+  } 
+  
+
+/* header, main, footer {
+    min-width: 100%;
+    margin: 0 auto;
+} */
+
+
+
+h1, h2 {
+
+}
+
+a {
+
+}
+
+.section-spacing {
+    margin: 30px 0px;
+}
+
+.section-padding {
+    padding: 0% 2%;
+}
+
+
+.btn {
+    border-radius: 1.5rem;
+    background: black;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------------------
+            HEADER
+-------------------------- */
+#top-promo-banner {
+    background: url('../images/bubbles-background.jpeg');
+}
+/* --------------------------
+            NAVBAR
+-------------------------- */
+
+
+/* --------------------------
+            SECTION 
+-------------------------- */
+#hero {
+   text-align: center;
+}
+
+#hero > * {
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card > * {
+    padding-bottom: 15px;
+    
+}
+
+.card {
+    /* flex: 1; */
+    margin: 20px;
+    padding: 20px;
+    /* width: 25%; */
+    background-color: rgba(245,245,245);
+    border-radius: 1em;
+    text-align: center;
+
+}
