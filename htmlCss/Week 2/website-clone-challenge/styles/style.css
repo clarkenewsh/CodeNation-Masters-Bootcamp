@@ -52,18 +52,25 @@ h4 {
     font-weight: 700;
 }
 
+h1 {
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
 h2 {
-    font-size: 22px
+    font-size: 28px;
+    padding-bottom: 10px;
 }
 
 
 
 a {
-
+    text-decoration: none;
+    margin-top: 30px;
 }
 
 .section-spacing {
-    margin: 30px 0px;
+    margin: 50px 0px;
 }
 
 .section-padding {
@@ -75,9 +82,9 @@ a {
     border-radius: 1.5rem;
     background: black;
     color: #ffffff;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border: none;
-    margin: 15px;
+    margin-top: 15px;
 }
 
 .btn-light {
@@ -86,7 +93,7 @@ a {
     color: black;
     padding: 15px 30px;
     border: none;
-    margin: 15px;
+    margin-top: 15px;
 } 
 
 .responsive-img {
@@ -108,13 +115,16 @@ a {
 #top-promo-banner div:first-of-type {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     position: relative;
+    height: 60px;
 }
 
+
 #top-promo-banner div > div {
-    margin: 20px;
+    margin-right: 20px;
     font-weight: 700;
+
 }
 
 
@@ -122,27 +132,59 @@ a {
 /* --------------------------
             NAVBAR
 -------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+  padding-right: 20px;
+}
+
+
+nav input {
+    border-radius: 3em;
+    padding: 10px 15px;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+nav svg {
+    margin-left: 10px;
+}
 
 /* --------------------------
             SECTIONS
 -------------------------- */
 #hero {
    text-align: center;
+   margin-bottom: 100px;
 }
 
-#hero h2, p {
+#hero p {
     padding-bottom: 20px;
 }
 
-#best-sellers {
-    border-bottom: 5px solid gray;
+#best-sellers h2 {
+    padding-bottom: 40px;
+}
+#best-sellers p, span {
+    padding: 5px 0px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     /* overflow: auto; */
+    border-bottom: 5px solid rgb(207, 207, 207);
 }
 
 .card {
@@ -164,9 +206,9 @@ a {
     text-align: center;
 }
 
-.card h2, p, span {
+/* .card > h2, p, span {
     padding-bottom: 15px;
-}
+} */
 
 
 
@@ -234,4 +276,9 @@ a {
     width: 48%;
     flex-grow: 1;
     margin: 10px;
+}
+
+#sign-up-banner {
+    background-color: #F5F5F5;
+    width: 100%;
 }
