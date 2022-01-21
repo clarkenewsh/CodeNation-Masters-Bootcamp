@@ -5,12 +5,13 @@
 }
 
 body {
-   display: flex;
+    display: flex;
     min-width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    align-content: center; 
+    /* justify-content: center;
+    align-content: center;  */
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 
@@ -21,12 +22,15 @@ body {
 .wrapper {
     max-width: 88em;
     margin: 0 auto;
+    /* padding: 0% 2%; */
+    /* width: 95%; */
+    /* display: flex; */
   } 
   
 
 /* header, main, footer {
     min-width: 100%;
-    margin: 0 auto;
+    align-self: center;
 } */
 
 
@@ -52,14 +56,25 @@ a {
     border-radius: 1.5rem;
     background: black;
     color: #ffffff;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border: none;
+    margin: 15px;
+}
+
+.btn-light {
+    border-radius: 1.5rem;
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    margin: 15px;
 }
 
 .responsive-img {
     max-width: 100%;
     height: auto;
 }
+
 
 /* --------------------------
             HEADER
@@ -73,33 +88,75 @@ a {
 
 
 /* --------------------------
-            SECTION 
+            SECTIONS
 -------------------------- */
 #hero {
    text-align: center;
 }
 
-#hero > * {
+#hero h2, p {
     padding-bottom: 20px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-}
-
-.card > * {
-    padding-bottom: 15px;
-    
+    /* overflow: auto; */
 }
 
 .card {
-    /* flex: 1; */
-    margin: 20px;
+    flex-grow: 1;
+    margin: 10px;
     padding: 20px;
     /* width: 25%; */
     background-color: rgba(245,245,245);
     border-radius: 1em;
     text-align: center;
+}
 
+.card-alt {
+    /* flex-grow: 1; */
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.card h2, p, span {
+    padding-bottom: 15px;
+}
+
+
+
+#brewdog-restaurant {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+#brewdog-restaurant div {
+    width: 33%;
+    flex-grow: 1;
+}
+
+
+
+#carbon-negative {
+    background-image: url('../images/eco-banner.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    padding: 70px;
+    color: white;
+    text-align: center;
+}
+
+#carbon-negative h2 {
+    margin-bottom: 20px;
+}
+
+#brewdog-commercial {
+    display: flex;
 }
