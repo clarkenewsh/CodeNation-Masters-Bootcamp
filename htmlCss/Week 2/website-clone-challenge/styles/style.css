@@ -1,3 +1,7 @@
+/* Google fonts import - heading & body  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +16,10 @@ body {
     align-content: center;  */
     min-height: 100vh;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+
 }
 
 
@@ -35,9 +43,20 @@ body {
 
 
 
-h1, h2 {
-
+h1, 
+h2,
+h3,
+h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+
+h2 {
+    font-size: 22px
+}
+
+
 
 a {
 
@@ -68,7 +87,7 @@ a {
     padding: 15px 30px;
     border: none;
     margin: 15px;
-}
+} 
 
 .responsive-img {
     max-width: 100%;
@@ -79,9 +98,27 @@ a {
 /* --------------------------
             HEADER
 -------------------------- */
+
+
 #top-promo-banner {
     background: url('../images/bubbles-background.jpeg');
+    
 }
+
+#top-promo-banner div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+#top-promo-banner div > div {
+    margin: 20px;
+    font-weight: 700;
+}
+
+
+
 /* --------------------------
             NAVBAR
 -------------------------- */
@@ -96,6 +133,10 @@ a {
 
 #hero h2, p {
     padding-bottom: 20px;
+}
+
+#best-sellers {
+    border-bottom: 5px solid gray;
 }
 
 .cards {
@@ -132,12 +173,22 @@ a {
 #brewdog-restaurant {
     display: flex;
     flex-wrap: wrap;   
+    
 }
 
 #brewdog-restaurant div {
-    width: 33%;
+    width: 30%;
+    margin: 10px;
     flex-grow: 1;
+    height: 30%;
+    
 }
+
+@media all and (max-width: 768px) {
+    #brewdog-restaurant div {
+        width: 100%;
+    }
+  }
 
 
 
@@ -159,4 +210,28 @@ a {
 
 #brewdog-commercial {
     display: flex;
+    flex-wrap: wrap;
+}
+
+#brewdog-commercial div {
+    width: 20%;
+    margin: 10px;
+    flex-grow: 1;
+    height: 30%;
+}
+
+#brewdog-commercial div img {
+   
+}
+
+#carbon-quality {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#carbon-quality div {
+    width: 48%;
+    flex-grow: 1;
+    margin: 10px;
 }
