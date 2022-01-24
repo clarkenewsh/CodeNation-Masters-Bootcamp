@@ -19,7 +19,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-
 }
 
 
@@ -28,13 +27,18 @@ body {
 -------------------------- */
 
 .wrapper {
-    max-width: 88em;
+    max-width: 90em;
     margin: 0 auto;
     /* padding: 0% 2%; */
     /* width: 95%; */
     /* display: flex; */
-  } 
-  
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /* header, main, footer {
     min-width: 100%;
@@ -43,7 +47,7 @@ body {
 
 
 
-h1, 
+h1,
 h2,
 h3,
 h4 {
@@ -54,19 +58,16 @@ h4 {
 
 h1 {
     font-size: 34px;
-    padding-bottom: 10px;
 }
 
 h2 {
     font-size: 28px;
-    padding-bottom: 10px;
 }
-
-
 
 a {
     text-decoration: none;
     margin-top: 30px;
+    color: black;
 }
 
 .section-spacing {
@@ -84,7 +85,8 @@ a {
     color: #ffffff;
     padding: 10px 30px;
     border: none;
-    margin-top: 15px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .btn-light {
@@ -94,7 +96,8 @@ a {
     padding: 15px 30px;
     border: none;
     margin-top: 15px;
-} 
+    display: inline-block;
+}
 
 .responsive-img {
     max-width: 100%;
@@ -109,7 +112,7 @@ a {
 
 #top-promo-banner {
     background: url('../images/bubbles-background.jpeg');
-    
+
 }
 
 #top-promo-banner div:first-of-type {
@@ -121,10 +124,9 @@ a {
 }
 
 
-#top-promo-banner div > div {
+#top-promo-banner div>div {
     margin-right: 20px;
     font-weight: 700;
-
 }
 
 
@@ -146,9 +148,14 @@ nav ul {
 }
 
 nav ul li {
-  padding-right: 20px;
+    padding: 10px;
+    display: inline-block;
 }
 
+nav ul li:hover {
+    background: #F5F5F5;
+    border-radius: 20%;
+}
 
 nav input {
     border-radius: 3em;
@@ -165,8 +172,8 @@ nav svg {
             SECTIONS
 -------------------------- */
 #hero {
-   text-align: center;
-   margin-bottom: 100px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 #hero p {
@@ -176,7 +183,9 @@ nav svg {
 #best-sellers h2 {
     padding-bottom: 40px;
 }
-#best-sellers p, span {
+
+#best-sellers p,
+span {
     padding: 5px 0px;
 }
 
@@ -191,10 +200,14 @@ nav svg {
     flex-grow: 1;
     margin: 10px;
     padding: 20px;
-    /* width: 25%; */
-    background-color: rgba(245,245,245);
+    /* width: 20%; */
+    background-color: rgba(245, 245, 245);
     border-radius: 1em;
     text-align: center;
+}
+
+.card p:first-of-type {
+    text-transform: uppercase;
 }
 
 .card-alt {
@@ -214,8 +227,8 @@ nav svg {
 
 #brewdog-restaurant {
     display: flex;
-    flex-wrap: wrap;   
-    
+    flex-wrap: wrap;
+
 }
 
 #brewdog-restaurant div {
@@ -223,14 +236,15 @@ nav svg {
     margin: 10px;
     flex-grow: 1;
     height: 30%;
-    
 }
 
 @media all and (max-width: 768px) {
     #brewdog-restaurant div {
         width: 100%;
     }
-  }
+}
+
+
 
 
 
@@ -262,10 +276,6 @@ nav svg {
     height: 30%;
 }
 
-#brewdog-commercial div img {
-   
-}
-
 #carbon-quality {
     display: flex;
     flex-wrap: wrap;
@@ -281,4 +291,48 @@ nav svg {
 #sign-up-banner {
     background-color: #F5F5F5;
     width: 100%;
+    padding: 10px 0px;
+}
+
+#sign-up-banner input {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#sign-up-banner div:first-of-type {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+}
+
+footer div:first-of-type {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer select {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer .nav-socials div a {
+    padding-right: 15px;
+}
+
+footer .nav-socials img {
+    margin-top: 30px;
+}
+
+#copyright-banner {
+    background-color: #F5F5F5;
+    padding: 10px 0px;
 }
