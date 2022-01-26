@@ -12,6 +12,9 @@ const instruction = document.getElementById('instructions');
 const eventKey = document.getElementById('event-key');
 const eventCode = document.getElementById('event-code');
 const eventWhich = document.getElementById('event-which');
+const eventCodeCards = document.getElementById('event-codes');
+
+// eventCodeCards.style.display = 'none';
 
 
 // test keycode.event objects in console
@@ -24,6 +27,12 @@ document.addEventListener('keydown', (event) =>{
 
 
 document.addEventListener('keydown', (event) => {
+    if(eventCodeCards.display == 'none') {
+        eventCodeCards.style.display = 'none';
+    } else {
+        eventCodeCards.style.display = 'show';
+    }
+
     let key = event.key;
     let code = event.code;
     let which = event.which;
