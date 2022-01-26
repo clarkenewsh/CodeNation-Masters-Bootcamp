@@ -13,3 +13,8 @@ for(let listItem of myList) {
 }
 
 
+// // Checking events in the console
+// document.addEventListener(“click", (event) => {
+//     console.log(event);
+//     console.log(event.target);
+// })
