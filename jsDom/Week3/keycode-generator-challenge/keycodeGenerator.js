@@ -16,18 +16,17 @@ const eventCodeCards = document.getElementById('event-codes');
 
 eventCodeCards.style.display = 'none';
 
-
 // test keycode.event objects in console
-document.addEventListener('keydown', (event) =>{
-    console.log(event);
-    console.log(event.key);
-    console.log(event.code);
-    console.log(event.which);
-});
+// document.addEventListener('keydown', (event) =>{
+//     console.log(event);
+//     console.log(event.key);
+//     console.log(event.code);
+//     console.log(event.which);
+// });
 
 
 document.addEventListener('keydown', (event) => {
-    eventCodeCards.style.display = 'inline-block';
+    eventCodeCards.style.display = '';
     let key = event.key;
     let code = event.code;
     let which = event.which;
