@@ -158,16 +158,13 @@ const pad20 = document.getElementById('pad-20');
 // get drum machine audio elements
 const bassLoop = document.querySelector('#bass-loop');
 const analogueDrums = document.querySelector('#analogue-drums');
+const percDrums = document.querySelector('#perc-drums');
+const snareDrums = document.querySelector('#snare-drums');
 
 // Drum machine get elements
 const pads = document.getElementsByClassName('pads');
 
-
-
-
-
 // Drum machine event listener
-
 pad1.addEventListener('click', () => {
     console.log(pad1);
     bassLoop.currentTime = 0;
@@ -181,6 +178,23 @@ pad2.addEventListener('click', () => {
     analogueDrums.play();
 
 })
+
+pad3.addEventListener('click', () => {
+    console.log(pad3);
+    percDrums.currentTime = 0;
+    percDrums.play();
+
+})
+
+
+pad4.addEventListener('click', () => {
+    console.log(pad4);
+    snareDrums.currentTime = 0;
+    snareDrums.play();
+
+})
+
+
 
 
 // pads.addEventListener('click', () => {
