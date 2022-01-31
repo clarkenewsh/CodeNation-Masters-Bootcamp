@@ -273,6 +273,67 @@ console.log(staff2.reduceCredits());
 
 // Activity 2 - Cyber Pet 
 
+class CyberPet {
+    constructor(name){
+        this._name = name;
+        this._hunger = 50;
+        this._thirst = 50;
+        this._isHappy = 50;
+        this._isSleepy = 50;
+        this._isBored = false;
+    }
+
+    get name(){
+        return this._name;
+    }
+
+    get hunger(){
+        return this._hunger;
+    }
+
+    get thirst(){
+        return this._thirst;
+    }
+
+    get isHappy(){
+        return this._isHappy;
+    }
+
+    eat() {
+        this._hunger += 10;
+        this._isSleepy += 2;
+        this._thirst += 5;
+        return `Mmmmmm yummy! Hunger is now ${this._hunger}`;
+    }
+
+    drink() {
+        this._thirst -= 10;
+        return `Slurrrp! Thirst level is now ${this._thirst}`;
+    }
+
+    play() {
+        this._isHappy += 20;
+        this._isBored -= 20;
+        return `Yaayyyy, play time! Happiness level is now ${this._isHappy}`;
+    }
+}
+
+const pet1 = new CyberPet("clarke");
+console.log(pet1);
+console.log(pet1.eat());
+console.log(pet1.drink());
+console.log(pet1.play());
+
+class Dog extends CyberPet {
+    constructor (name) {
+        super(name)
+    }
+}
+
+
+
+
+
 
 
 
