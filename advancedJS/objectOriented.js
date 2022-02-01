@@ -271,6 +271,8 @@ console.log(staff2.credits);
 console.log(staff2.reduceCredits());
 
 
+
+
 // Activity 2 - Cyber Pet 
 
 class CyberPet {
@@ -324,6 +326,7 @@ console.log(pet1.eat());
 console.log(pet1.drink());
 console.log(pet1.play());
 
+// CyberPet sub class
 class Dog extends CyberPet {
     constructor (name) {
         super(name)
