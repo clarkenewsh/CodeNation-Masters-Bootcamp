@@ -328,12 +328,31 @@ console.log(pet1.play());
 
 // CyberPet sub class
 class Dog extends CyberPet {
-    constructor (name) {
-        super(name)
+    constructor (name, bark) {
+        super(name);
+        this._bark = bark;
+    }
+    // get bark () {
+    //     return this._bark;
+    // }
+
+    bark() {
+        return this._bark = "woof";
     }
 }
+// Create new dog 
+const newDog = new Dog("I'm a dog, my name is Bruce");
+console.log(newDog.name);
+console.log(newDog.bark());
 
 
+class Dragon extends CyberPet {
+    constructor (name, breatheFire) {
+        super(name);
+        this._breatheFire = breatheFire;
+    }
+
+}
 
 
 
