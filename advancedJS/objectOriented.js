@@ -240,7 +240,6 @@ class Staff extends CarPark {
         this._staffNum = staffNum;
         this._credits = credits;
         this._hoursCharge = 1.50;
-
     }
 
     get staffNumber() {
@@ -252,11 +251,11 @@ class Staff extends CarPark {
     }
 
     reduceCredits() {
-        return ` You have ${this.credits - this.charge} credits remaining`;
+        return `You have ${this.credits - this.charge} credits remaining`;
     }
 
 }
-
+// Create new staff objects
 const staff1 = new Staff ("VW62 VDF", 5, "122222", 25);
 const staff2 = new Staff ("AC71 SAF", 5, "134567", 50);
 
@@ -273,14 +272,15 @@ console.log(staff2.reduceCredits());
 
 
 
+
 // Activity 2 - Cyber Pet 
 
 class CyberPet {
     constructor(name){
         this._name = name;
-        this._hunger = 50;
-        this._thirst = 50;
-        this._isHappy = 50;
+        this._hunger = 10;
+        this._thirst = 100;
+        this._isHappy = 0;
         this._isSleepy = 50;
         this._isBored = false;
     }
@@ -301,60 +301,116 @@ class CyberPet {
         return this._isHappy;
     }
 
+    get isSleepy(){
+        return this._isSleepy;
+    }
+
     eat() {
-        this._hunger += 10;
-        this._isSleepy += 2;
+        this._hunger -= 10;
+        this._isSleepy += 5;
         this._thirst += 5;
-        return `Mmmmmm yummy! Hunger is now ${this._hunger}`;
+        if (this._hunger >= 90) {
+            console.log(`${this._name} needs feeding`);
+        } else {
+            console.log(`Mmmmmm yummy! Hunger is now ${this._hunger}`) ;
+        }
+        
     }
 
     drink() {
-        this._thirst -= 10;
-        return `Slurrrp! Thirst level is now ${this._thirst}`;
+        this._thirst -= 5;
+        if (this._thirst >= 90) {
+            console.log(`${this._name} needs a drink`);
+        } else {
+            console.log(`Slurrrp! Thirst level is now ${this._thirst}`);
+        }
+        
     }
 
     play() {
-        this._isHappy += 20;
-        this._isBored -= 20;
-        return `Yaayyyy, play time! Happiness level is now ${this._isHappy}`;
+        this._isHappy += 10;
+        this._isBored -= 10;
+        if(this._isHappy <= 10) {
+            console.log(`${this._name} needs playtime`);
+        } else {
+            console.log(`Yaayyyy, play time! Happiness level is now ${this._isHappy}`);
+        }
+    }
+
+    sleep() {
+        this._isSleepy -= 10;
+        console.log(`zzzzzzzzzzz... sleep level is ${this._isSleepy}`);
     }
 }
+// Create new pet
+const pet1 = new CyberPet("Pet 1");
 
-const pet1 = new CyberPet("clarke");
 console.log(pet1);
-console.log(pet1.eat());
-console.log(pet1.drink());
-console.log(pet1.play());
+pet1.eat();
+pet1.drink();
+pet1.play();
+// testing object is updating
+console.log(pet1);
 
-// CyberPet sub class
+
+// CyberPet sub class Dog
 class Dog extends CyberPet {
-    constructor (name, bark) {
+    constructor (name, bark, walk) {
         super(name);
         this._bark = bark;
+        this._walk = 50;
     }
-    // get bark () {
-    //     return this._bark;
-    // }
+
+    get bark () {
+        return this._bark;
+    }
+
+    get walk () {
+        return this._walk;
+    }
 
     bark() {
         return this._bark = "woof";
     }
+
+    walk() {
+        this._walk ++;
+        this._isHappy += 15;
+        this._thirst += 5;
+        this._isBored -= 15;
+        this._isSleepy += 10;
+        console.log(`Walkies time... walkies level is ${this._isSleepy}`);
+    }
 }
+
 // Create new dog 
-const newDog = new Dog("I'm a dog, my name is Bruce");
-console.log(newDog.name);
-console.log(newDog.bark());
+const newDog = new Dog("I'm a dog, my name is Gwen");
+
+newDog.name;
+newDog.bark();
+newDog.walk();
+// testing object is updating
+console.log(newDog);
 
 
+// CyberPet sub class Dragon
 class Dragon extends CyberPet {
     constructor (name, breatheFire) {
         super(name);
         this._breatheFire = breatheFire;
     }
 
+    get breatheFire() {
+        return this._breatheFire;
+    }
+
+
+
 }
 
-
+// Create new Dragon
+const newDragon = new Dragon("I'm a Dragon", true);
+console.log(newDragon);
 
 
 
