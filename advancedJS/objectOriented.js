@@ -275,12 +275,22 @@ console.log(staff2.reduceCredits());
 
 // Activity 2 - Cyber Pet 
 
+// // Buttons
+// const btnPlay = document.querySelector('#btnPlay');
+// const btnFeed = document.querySelector('#btnFeed');
+// const btnDrink = document.querySelector('#btnDrink');
+// const btnWalk = document.querySelector('#btnWalk');
+
+// // Pet message container
+// const petMsg = document.querySelector('.petMsg');
+
+
 class CyberPet {
     constructor(name){
         this._name = name;
-        this._hunger = 10;
-        this._thirst = 100;
-        this._isHappy = 0;
+        this._hunger = 100;
+        this._thirst = 50;
+        this._isHappy = 50;
         this._isSleepy = 50;
         this._isBored = false;
     }
@@ -311,10 +321,11 @@ class CyberPet {
         this._thirst += 5;
         if (this._hunger >= 90) {
             console.log(`${this._name} needs feeding`);
+            // petMsg.textContent = `${this._name} needs feeding`;
         } else {
             console.log(`Mmmmmm yummy! Hunger is now ${this._hunger}`) ;
+            // petMsg.textContent = `Mmmmmm yummy! Hunger is now ${this._hunger}` ;
         }
-        
     }
 
     drink() {
@@ -351,6 +362,7 @@ pet1.drink();
 pet1.play();
 // testing object is updating
 console.log(pet1);
+pet1.play();
 
 
 // CyberPet sub class Dog
@@ -389,6 +401,7 @@ const newDog = new Dog("I'm a dog, my name is Gwen");
 newDog.name;
 newDog.bark();
 newDog.walk();
+newDog.eat();
 // testing object is updating
 console.log(newDog);
 
@@ -404,14 +417,32 @@ class Dragon extends CyberPet {
         return this._breatheFire;
     }
 
-
-
 }
 
-// Create new Dragon
-const newDragon = new Dragon("I'm a Dragon", true);
-console.log(newDragon);
+// // Create new Dragon
+// const newDragon = new Dragon("I'm a Dragon", true);
+// console.log(newDragon);
 
+
+// // Cyber Pet Button Listeners
+// btnPlay.addEventListener('click', () => {
+//     console.log('clicked')
+// })
+
+// btnFeed.addEventListener('click', () => {
+//     // console.log('clicked')
+//     newDog.eat();
+//     // petMsg.style.display = "none";
+
+// })
+
+// btnDrink.addEventListener('click', () => {
+//     // console.log('clicked')
+// })
+
+// btnWalk.addEventListener('click', () => {
+//     console.log('clicked')
+// })
 
 
 
