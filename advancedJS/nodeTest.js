@@ -55,3 +55,17 @@ fs.appendFile('oh-hi.txt', `Hello ${userDetails}`, (err) => {
         console.log('oops');
     }
 })
+
+
+// Third Party modules - npm install used to import all the external dependencies outlined in the package.json file 
+const _ = require('lodash');
+
+// Using the lodash library to get a random number between 1-100
+let myRandom = _.random(1, 100);
+console.log(myRandom);
+
+// Using lodash - Creates an object composed of the inverted keys and values of `object`.
+let invertStr = _.invert("clarke");
+console.log(invertStr);
+
+
