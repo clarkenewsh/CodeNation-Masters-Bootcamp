@@ -52,7 +52,8 @@ button {
 #screen {
     background: lightgrey;
     padding: 50px;
-    border-radius: 5%;
+    border-radius: 4%;
+    width: 100%;
 }
 
 img {
