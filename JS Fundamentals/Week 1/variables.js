@@ -22,7 +22,6 @@ console.log(`My favorite drink is ${favDrink} because its nice!`);
 
 
 
-
 // --------------------------------
 
 // Activity 1
