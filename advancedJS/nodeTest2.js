@@ -12,12 +12,15 @@ const multiply = (num1, num2) => {
     return num1 * num2;
 }
 
+const copyArr = (array) => {
+    return [...array];
+}
 // export functions to be imported in nodeTest.js file
 module.exports = {
     add,
     subtract,
-    multiply
+    multiply,
+    copyArr
 }
-
 
 
