@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+}
+
+.main {
+  max-width: 90rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 90%;
+}
+
+.movies {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.movie img {
+  height: 400px;
+  width: 250px;
+}
+
+.movie {
+  margin: 5px;
+}
+
+.hotels {
+  display: flex;
+}
+
+.hotel {
+  margin: 5px;
+}
+
+.hotel img {
+  width: 300px;
+  height: 300px;
+  border-radius: 2%;;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article img {
+  width: 280px;
+  height: 150px;
+}
+
+
+
