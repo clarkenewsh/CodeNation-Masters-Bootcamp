@@ -52,26 +52,34 @@ const App = () => {
     {
       id:1,
       title: 'Dont think the pandemic is over',
-      body: 'Unlocking too quikcly would lead to a substancial surge in infection, UK chief medical adviser says.',
-      img: article1
+      body: 'Unlocking too quickly would lead to a substantial surge in infection, UK chief medical adviser says.',
+      img: article1,
+      timeStamp: '2hr',
+      category: 'Health'
     },
     {
       id:2,
-      title: 'number',
-      body: 'Unlocking too quikcly would lead to a substancial surge in infection, UK chief medical adviser says.',
-      img: article2
+      title: 'Pay rise was set to be 2.1% - NHS chief.',
+      body: 'NHS England boss backs ministers over pay dispute but does not rule out a one-ff bonus for workers',
+      img: article2,
+      timeStamp: '1hr',
+      category: 'UK Politics'
     },
     {
       id:3,
-      title: 'Dont think the pandemic is over',
-      body: 'Unlocking too quikcly would lead to a substancial surge in infection, UK chief medical adviser says.',
-      img: article3
+      title: 'Charity criticises Morgans comments about Meghan',
+      body: 'Mental health charity Mind says it is "disappointed" by comments Piers Morgan made on Monday.',
+      img: article3,
+      timeStamp: '2hr',
+      category: 'Entertainment & Arts'
     },
     {
       id:4,
-      title: 'Dont think the pandemic is over',
-      body: 'Unlocking too quikcly would lead to a substancial surge in infection, UK chief medical adviser says.',
-      img: article4
+      title: 'Unilever drops word "normal" from beauty products',
+      body: 'The owner of Dove and Vaseline will remove the word from about 200 products in a push for inclusively.',
+      img: article4,
+      timeStamp: '10m',
+      category: 'Business'
     }
 ]
 
@@ -134,6 +142,9 @@ const Article = (props) => {
       <img src={props.article.img} alt=''></img>
       <h2>{props.article.title}</h2>
       <p>{props.article.body}</p>
+      <span>{props.article.timeStamp}</span>
+      <span>{props.article.category}</span>
+
     </div>
   )
 };

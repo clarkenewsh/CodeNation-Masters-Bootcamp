@@ -17,8 +17,6 @@ body {
 
 .movies {
   display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .movie img {
@@ -46,12 +44,20 @@ body {
 
 .articles {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.article {
+  margin: 15px;
 }
 
 .article img {
   width: 280px;
   height: 150px;
+}
+span {
+  font-size: 14px;
+  padding: 5px;
 }
 
 
