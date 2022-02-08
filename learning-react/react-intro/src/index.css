@@ -17,11 +17,14 @@ body {
 
 .movies {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .movie img {
   height: 400px;
   width: 250px;
+  max-width: 100%;
+  height: auto;
 }
 
 .movie {
@@ -30,6 +33,7 @@ body {
 
 .hotels {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hotel {
@@ -39,21 +43,27 @@ body {
 .hotel img {
   width: 300px;
   height: 300px;
-  border-radius: 2%;;
+  border-radius: 2%;
+  max-width: 100%;
+  height: auto;
 }
 
 .articles {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .article {
   margin: 15px;
+  flex-grow: 1;
 }
 
 .article img {
   width: 280px;
   height: 150px;
+  max-width: 100%;
+  height: auto;
+
 }
 span {
   font-size: 14px;

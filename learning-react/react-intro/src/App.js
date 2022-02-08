@@ -128,11 +128,11 @@ const Hotel = (props) => {
 const NewsArticleList = (props) => {
 
   return (
-    <div className='articles'>
+    <>
       {props.articles.map((article) => (
           <Article articles={props.articles} key={article.id} article={article} />
       ))}
-    </div>
+    </>
   )
 };
 
@@ -144,7 +144,6 @@ const Article = (props) => {
       <p>{props.article.body}</p>
       <span>{props.article.timeStamp}</span>
       <span>{props.article.category}</span>
-
     </div>
   )
 };
