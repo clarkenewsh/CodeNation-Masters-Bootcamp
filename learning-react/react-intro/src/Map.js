@@ -11,11 +11,11 @@ export const Map = () => {
         //        return <h1>Book price is £{bookPrice}</h1>
         //     })}
         // </div>
-        // Map through the bookPrices array, assign each one to bookPrice and return Book component that we passed the bookPrice props to for each price
+        // Map through the bookPrices array, assign each one to bookPrice and key index and return Book component that we passed the bookPrice props to for each price
         <div>
             <h1>Using Map in react</h1>
-            {bookPrices.map((bookPrice) => {
-                return <Book bookPrice={bookPrice} key={bookPrice.id} />
+            {bookPrices.map((bookPrice, index) => {
+                return <Book bookPrice={bookPrice} key={index} />
             })}
         </div>
     )
