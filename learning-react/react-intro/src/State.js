@@ -22,6 +22,11 @@ const State = () => {
     const incrementCount = () => {
         setCount(count + 1);
     }
+
+    const resetCounter = () => {
+        setCount(0);
+    }
+
     // using parameter age to catch the props.age property from - onClick={() => props.clickMe(props.age)
     const handleClick = (age) => {
         alert(age);
@@ -32,6 +37,7 @@ const State = () => {
             <h1>{ count }</h1>
             {/* <button onClick={() => setCount(count + 1)}></button> */}
             <button onClick={incrementCount}>Increase count</button>
+            <button onClick={resetCounter}>Reset counter </button>
             <Person 
                 name={person[0].name} 
                 age={person[0].age}
