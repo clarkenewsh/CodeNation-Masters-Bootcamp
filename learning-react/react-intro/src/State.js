@@ -50,7 +50,7 @@ const State = () => {
              {/* Ternary operator - using setBool to do opposite here */}
              <h2> This boolean value is currently { bool ? 'false' : 'true' }</h2>
              {/* Short Circuit && - If condition is true, display bool vale, if false display nothing */}
-             {bool && `bool is ${bool}`}
+             {/* {bool && `bool is ${bool}`} */}
         </div>
     )
 }

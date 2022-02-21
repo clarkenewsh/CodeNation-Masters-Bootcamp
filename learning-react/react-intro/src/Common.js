@@ -19,6 +19,7 @@ const Common = () => {
 
     // remove number from specific index in the array when clicking on it
     const removeHandler = (index) => {
+        console.log('delete', index)
          // spread over numbers, copy array and store in new array storedNums
         let storedNums = [...numbers];
 
