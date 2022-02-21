@@ -24,12 +24,15 @@ const app = (args) => {
     switch (args[2]) {
         case "add":
             const movie = new Movie(args[3], args[4]);
+            console.log(movie.add());
+            // take user inputted movie, add to array and console.log that array
+            break;
+
+        case "add multi":
             const movie1 = new Movie(args[5], args[6]);
             const movie2 = new Movie(args[7], args[8]);
-            console.log(movie.add());
             console.log(movie1.add());
             console.log(movie2.add());
-            // take user inputted movie, add to array and console.log that array
             break;
         default:
             console.log("Incorrect input");
